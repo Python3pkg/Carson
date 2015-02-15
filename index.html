@@ -39,6 +39,7 @@
         <h3><a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Prerequisite</h3>
         <ul>
             <li>Memcache</li>
+            <li>Sorl Thumbnail</li>
         </ul>
         <h3><a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Quick Start</h3>
         <pre><code>pip install bates</code></pre>
@@ -67,10 +68,9 @@ urlpatterns = patterns('',
     url(r'(?P&lt;namespace&gt;[\w-]+)/(?P&lt;pathname&gt;.*)', serve_image),
 )</code></pre>
 
-        <a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Admin</h3>
+        <a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a><h3>Admin</h3>
 
-<pre><code>./manage.py runserver
-./manage.py createsuperuser</code></pre>
+<pre><code>./manage.py runserver</code></pre>
 
         <p>Define Origin</p>
 
@@ -86,7 +86,7 @@ urlpatterns = patterns('',
             <li>Click Image Profiles</li>
         </ol>
 
-        <p>JavaScript</p>
+        <a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a><h3>JavaScript</h3>
 
 <pre><code>&lt;script src="http://localhost:8000/static/js/carson.js"&gt;&lt;/script&gt;</code></pre>
 
