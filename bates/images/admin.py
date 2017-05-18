@@ -19,7 +19,7 @@ class MezzanineAdmin(AdminImageMixin, admin.ModelAdmin):
     def preview(self, instance):
         resized_image_url = '%s%s' % (settings.SITE_URL,
             instance.image_field.path.split(settings.MEDIA_ROOT)[1])
-        return u'<img src="%s?size=small" />' % resized_image_url
+        return '<img src="%s?size=small" />' % resized_image_url
 
     preview.allow_tags = True
 

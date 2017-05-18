@@ -18,12 +18,12 @@ class OriginAdmin(admin.ModelAdmin):
         super(OriginAdmin, self).save_model(request, obj, form, change)
 
     def preview(self, instance):
-        preview_markup = u''
+        preview_markup = ''
 
         for image in instance.images.all()[:5]:
             resized_image_url = '%s%s' % (settings.SITE_URL,
                 image.image_field.path.split(settings.MEDIA_ROOT)[1])
-            image_markup = u'<img src="%s?size=small" />' % resized_image_url
+            image_markup = '<img src="%s?size=small" />' % resized_image_url
             preview_markup = preview_markup + image_markup
         #TODO: Potential improvement: Pagination?
         if instance.images.count() > 5:

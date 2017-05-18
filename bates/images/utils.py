@@ -1,4 +1,4 @@
-from StringIO import StringIO
+from io import StringIO
 
 from django.core.files import File
 from django.http import HttpResponse

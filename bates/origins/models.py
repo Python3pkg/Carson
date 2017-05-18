@@ -13,4 +13,4 @@ class Origin(TimeStamp):
     password = models.CharField(max_length=100, blank=True)
 
     def __unicode__(self):
-        return u'%s' % self.namespace
+        return '%s' % self.namespace

@@ -17,7 +17,7 @@ class Mezzanine(TimeStamp):
 
     def __unicode__(self):
         image_url = self.image_field.path.split(settings.MEDIA_ROOT)[1]
-        return u'%s' % image_url
+        return '%s' % image_url
 
 
 class ImageProfile(NameAndDescription, TimeStamp):

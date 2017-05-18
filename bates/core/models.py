@@ -9,7 +9,7 @@ class NameAndDescription(models.Model):
         abstract = True	
 
     def __unicode__(self):
-        return u'%s' % self.name
+        return '%s' % self.name
 
 
 class TimeStamp(models.Model):
